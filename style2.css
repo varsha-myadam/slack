@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.browser{
+    max-width: 1000px;
+    height: 90vh;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid ccc;
+    font-family: sans-serif;
+    color: #111;
+}
+
+span{
+    display: inline-block;
+}
+
+.titlebar{
+    background-color: #2b092a;
+    height: 40px;
+    padding: 10px 20px;
+}
+
+.circle{
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    margin-right: 4px;
+}
+
+.circle.close{
+    background-color: red;
+}
+.circle.maximize{
+    background-color: orange;
+}
+.circle.minimize{
+    background-color: green;
+}
+.circle.online{
+    background: rgba(0, 245, 61, 0.842);
+}
+
+.window{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    height: 100%;
+}
+
+.sidebar{
+    background: #470f46;
+    color: white;
+}
+
+.p-20{
+    padding-left: 20px;
+}
+
+.sidebar .user{
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar h3{
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+.sidebar li{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.6;
+    color: whitesmoke
+}
+
+.sidebar li:hover{
+    opacity: 1;
+    background: #2b092a; 
+    cursor: pointer;
+}
+
+.sidebar li.active{
+    background: #1364a3;
+    color: white;
+}
+
+.sidebar li.unread{
+    font-weight:700;
+    color: white;
+}
+
+.group-member-count{
+    font-size: 0.8rem;
+    background: #aaa;
+    color: black;
+    line-height: 0rem;
+    border-radius: 4px;
+    margin-right: 5px;
+    padding: 9px;
+}
+
+.sidebar h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.chat-container .name{
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+}
+
+.chat-container .info{
+    color: #666;
+}
+
+.chat-container header{
+    min-height: 4rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.chat-container .messages-container{
+    height: 36rem;
+}
+
+.chat-container footer{
+    height:1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.chat-container .input-wrapper{
+    border: 1px solid #666;
+    padding: 1rem 1rem;
+    border-radius: 4px;
+}
+
+.input-wrapper input{
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    margin-left: 0.3rem;
+    border-left: 1px solid #ccc;
+}
+
+.input-wrapper span{
+    font-size: 1.3rem;
+}
+
+.input-wrapper input:focus{
+    outline: none;
+}
+
+.messages-container{
+    padding: 5px 1.5rem;
+    overflow-y: auto;
+}
+
+.message{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.message-object .time{
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.message-object .content{
+    margin-top: 0.3rem;
+    line-height: 1.4;
+}
+
+.message-object .name{
+    font-weight: bold;
+    color: #666;
+}
+
+
+.message-photo{
+    display: block;
+    max-width: 100%;
+    border-radius: 4px;
+}
+

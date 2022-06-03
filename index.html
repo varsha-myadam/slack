@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    
+</head>
+<body>
+    <div class="browser">
+        <div class="titlebar">
+            <span class="circle close"></span>
+            <span class="circle maximize"></span>
+            <span class="circle minimize"></span>
+        </div>
+        <div class="window">
+            <div class="sidebar">
+                <h2>Edyst</h2>
+                <div class="user p-20">
+                    <span class="circle online"></span>
+                    Varsha Myadam
+                </div>
+                <h3>Channels</h3>
+                <ul id="channels-list">
+                    <li id="dev-team-weekly" class="active">#  dev-team weekly</li>
+                    <li id="project-checkout" class="unread">#  project-checkout</li>
+                    <li id="sales-approval">#  sales-approval</li>
+                </ul>
+                <h3>Direct messages</h3>
+                <ul>
+                    <li><span class="circle group-member-count">2</span>aayushi</li>
+                    <li><span class="circle online"></span>KArandeep singh</li>
+                </ul>
+
+
+            </div>
+            <div class="chat-container">
+                <header>
+                    <span class="name">#  Dev-Team-weekly</span>
+                    <div class="info">12 | Lets use this channel for us</div>
+                </header>
+                <div class="messages-container">
+                    <ul id="message-list">
+                        <li class="message">
+                            <img class="message-photo" src="data:image/png;base64,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" alt="" srcset="">
+                            <div class="message-object">
+                                <span class="name">Varsha</span>
+                                <span class="time">10:12pm</span>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem iste error, doloribus nostrum magnam ipsam deleniti dolor sint modi.
+                                </div>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <footer>
+                    <div class="input-wrapper">
+                        <span>⚡</span>
+                        <input type="text" placeholder="message dev-team-weekly">
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
